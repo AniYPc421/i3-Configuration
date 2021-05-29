@@ -1,0 +1,25 @@
+URxvt.inputMethod:fcitx
+URxvt.scrollBar:Flase
+URxvt.scrollBar_floating:Flase
+URxvt.borderLess:False
+URxvt.font:xft:Source Code Pro:antialias=True:pixelsize=18,xft:WenQuanYi Micro Hei:pixelsize=18
+URxvt.boldfont:xft:Source Code Pro:antialias=True:pixelsize=18,xft:WenQuanYi Micro Hei:pixelsize=18
+URxvt.background:#333333
+URxvt.foreground:White
+URxvt.color0:Black
+URxvt.color1:#ff0033
+URxvt.color2:#00cc66
+URxvt.color3:#ffcc33
+URxvt.color4:#3399cc
+URxvt.color5:#cc33cc
+URxvt.color6:#009999
+URxvt.color7:AntiqueWhite
+URxvt.color8:Gray25
+URxvt.color9:#ff3333
+URxvt.color10:#00ff66
+URxvt.color11:#ffff33
+URxvt.color12:#00cccc
+URxvt.color13:#cc66cc
+URxvt.color14:#00cc99
+URxvt.color15:White
+URxvt.internalBorder:20

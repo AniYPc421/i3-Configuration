@@ -1,27 +1,30 @@
-#!/bin/sh
+#!/bin/bash
+lock() {
+    i3lock
+}
 
 case "$1" in
     lock)
-        scrot /tmp/lockscreen.png && mogrify -scale 50% -gaussian-blur 0x4 -gamma 0.8 -scale 200% /tmp/lockscreen.png && i3lock -i /tmp/lockscreen.png
-        ;;
+	scrot /tmp/lockscreen.png && mogrify -scale 50% -gaussian-blur 0x4 -gamma 0.8 -scale 200% /tmp/lockscreen.png && i3lock -i /tmp/lockscreen.png
+	;;
     logout)
-        i3-msg exit
-        ;;
+	i3-msg exit
+	;;
     suspend)
-        lock && systemctl suspend
-        ;;
+	lock && systemctl suspend
+	;;
     hibernate)
-        lock && systemctl hibernate
-        ;;
+	lock && systemctl hibernate
+	;;
     reboot)
-        systemctl reboot
-        ;;
+	systemctl reboot
+	;;
     shutdown)
-        systemctl poweroff
-        ;;
+	systemctl poweroff
+	;;
     *)
-        echo "Usage: $0 {lock|logout|suspend|hibernate|reboot|shutdown}"
-        exit 2
+	echo "Usage: $0 {lock|logout|suspend|hibernate|reboot|shutdown}"
+	exit 2
 esac
 
 exit 0
